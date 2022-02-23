@@ -1,0 +1,650 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/FondoLogin.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+body hr{
+    border-top:0px;
+    margin: 30px 0;
+}
+
+
+.CajaBusqueda{
+    background: linear-gradient(to bottom, #1a0e0a, #73112b);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.CajaBusqueda h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #f8d8cd;
+}
+
+.CajaBusqueda h2{
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #f8d8cd;
+}
+
+
+.CajaBusqueda p{
+    font-size: 15px;
+    text-align: center;
+    color: #d3b7ad;
+    line-height: 28px;
+}
+
+.CajaBusqueda th{
+    font-size: 14px;
+    text-align: center;
+    color: #d3b7ad;
+    line-height: 28px;
+}
+
+.CajaBusqueda td{
+    font-size: 15px;
+    text-align: center;
+    color: #d3b7ad;
+    padding: 5px;
+    line-height: 28px;
+}
+
+.CajaBusqueda td .perfil{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color: #d3b7ad;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+.CajaBusqueda input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.CajaBusqueda img{
+    border-radius: 25%;
+}
+
+.tabla{
+    --bs-table-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    /* vertical-align: top; */
+    border-color: #dee2e646;
+}
+
+.CajaBusqueda .table-bordered>:not(caption)>*>* {
+    border-width: 0 1px;
+}
+
+
+
+.CajaBusqueda input[type="search"] {
+    border: none;
+    border-bottom: 1px solid  #f8d8cd;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #f8d8cd;
+    font-size: 15px;
+}
+
+.CajaBusqueda input[type="submit"] {
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    display: block;
+    width: 30%;
+    background: #b90f42;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.CajaBusqueda tr input[type="submit"] {
+    border: none;
+    display: block;
+    margin: 2px auto;
+    outline: none;
+    width: 80%;
+    color: #fff;
+    background: #b90f42;
+    font-size: 16px;
+    border-radius: 4px;
+
+}
+
+.CajaBusqueda ::placeholder {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding-left: 2px;
+    height: 50px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: auto;
+}
+
+.CajaBusqueda input[type="submit"]:hover {
+    cursor: pointer;
+    background: #EC8464;
+}
+
+/********* PARTE DEL CHAT *********/
+
+.CajaChat{
+    width: 600px;
+    height: 445px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 53.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 20px;
+    box-shadow: 0 7px 30px rgb(0 0 0 / 64%);
+    border-radius: 5px;
+}
+
+.CajaChat .avatar {
+    width: 200px;
+    position: absolute;
+    top: -60px;
+    left: 200px;
+  }
+
+.CajaChat h1{
+    text-align: center;
+    font-size: 35px;
+    color: #f8d8cd;
+}
+
+.CajaChat i{
+    color: #ff7e52;
+}
+
+.CajaChat h2{
+    font-size: 13px;
+    color: #f8d8cd;
+    margin-top: -2px;
+}
+
+.CajaChat input[type="submit"] {
+    border: none;
+    width: 14%;
+    background: #94163b;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6.5px;
+}
+
+.CajaChat input[type="submit"]:hover {
+    border: none;
+    width: 14%;
+    background: #EC8464;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6.5px;
+}
+
+.CajaChat input[type="text"] {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background: transparent;
+    outline: none;
+    width: 85%;
+    height: 40px;
+    color: #f8d8cd;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.CajaChat .Conversacion{
+    border:1px solid #f3f3f37e;
+    width: 540px;
+    height: 160px;
+    padding: 10px;
+    overflow: auto;
+
+}
+
+.CajaChat textarea[type="text"] {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 55px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: visible;
+}
+
+.CajaChat ::placeholder {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding-left: 2px;
+    height: 50px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: visible;
+}
+
+.CajaChat .boton {
+    text-decoration: none;
+    display: table;
+    margin: 15px auto;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #227dfa;
+    border-radius: 6px;
+}
+
+.CajaChat .boton:hover {
+    background-color: #7cadf3;
+}
+
+/********** PARTE DE APUESTAS **************/
+
+.Apuesta{
+    width: 600px;
+    height: 469px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 53.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 20px;
+    box-shadow: 0 7px 30px rgb(0 0 0 / 64%);
+    border-radius: 5px;
+}
+
+.Apuesta .avatar {
+    width: 200px;
+    position: absolute;
+    top: -60px;
+    left: 200px;
+  }
+
+.Apuesta h1{
+    text-align: center;
+    font-size: 35px;
+    color: #f8d8cd;
+}
+
+.Apuesta h2{
+    font-size: 20px;
+    text-align: center;
+    color: #f8d8cd;
+}
+
+.Apuesta h3{
+    font-size: 15px;
+    color: #f8d8cd;
+}
+
+.Apuesta h4{
+    color: #ff7e52;
+    font-size: 12px;
+
+}
+
+.Apuesta i{
+    color: #ff7e52;
+    padding: 2px;
+}
+
+.Apuesta b{
+    margin-bottom: 5px;
+}
+
+.Apuesta span{
+    margin-top: 10px;
+}
+
+
+.Apuesta input[type="submit"] {
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: inline-block;
+    width: 20%;
+    background: #b90f42;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+
+.Apuesta input[type="submit"]:hover {
+    cursor: pointer;
+    background: #EC8464;
+}
+
+.Apuesta input[type="text"] {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background:  #000000a2;
+    outline: none;
+    width: 66%;
+    height: 30px;
+    color: #f8d8cd;
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    border-radius: 0%;
+    text-overflow: ellipsis;
+}
+
+.Apuesta input[type="text"]:hover {
+	background: #1a1a1a;
+}
+
+.Apuesta select{
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background: #000000a2;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    color: #f8d8cd;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.Apuesta #resultado{
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background: #000000a2;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    color: #f8d8cd;
+    margin-bottom: 5px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.Apuesta .aprobar{
+    display: inline;
+}
+
+.Apuesta .two-columns{
+    -webkit-column-count: 2;
+    column-count: 2;
+    -moz-column-count: 2;
+}
+
+select{
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background:  #000000a2;
+    outline: none;
+    width: 26%;
+    height: 30px;
+    color: #f8d8cd;
+    font-size: 15px;
+    padding-left: 5px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+.select{
+    height: 100px;
+    overflow: scroll;
+}
+
+.Apuesta #boton{
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: inline-block;
+    width: 20%;
+    background:  #227dfa;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.Apuesta #boton:hover{
+    cursor: pointer;
+    background: #529aff;
+}
+
+.content-select select:hover{
+	background: #1a1a1a;
+}
+
+@media (max-width:666px){
+
+    /*************Parte del chat****************/
+    .CajaChat{
+        width: 90%;
+        padding-top: 28px;
+        padding-bottom: 10px;
+    }
+    
+    .CajaChat .avatar {
+        width: 150px;
+        position: absolute;
+        top: -45px;
+        left: 28%;
+      }
+    
+    .CajaChat h1{
+        text-align: center;
+        font-size: 28px;
+        color: #f8d8cd;
+    }
+    
+    .CajaChat i{
+        color: #ff7e52;
+        display: none;
+    }
+    
+    
+    .CajaChat input[type="submit"] {
+        border: none;
+        width: 23%;
+        background: #94163b;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 8.2px;
+    }
+    
+    .CajaChat input[type="submit"]:hover {
+        border: none;
+        width: 23%;
+        background:#EC8464;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 8.2px;
+    }
+
+    .CajaChat input[type="text"] {
+        border: 1px solid rgba(255, 255, 255, 0.274);
+        background: transparent;
+        outline: none;
+        width: 75%;
+        height: 40px;
+        color: #f8d8cd;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    
+    .CajaChat .Conversacion{
+        border:1px solid #f3f3f37e;
+        width: 100%;
+        height: 190px;
+        padding: 10px;
+        overflow: auto;
+    
+    }
+        
+    .CajaChat ::placeholder {
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        padding-left: 2px;
+        height: 50px;
+        width: 100%;
+        color: #f8d8cd;
+        font-size: 12px;
+        overflow: visible;
+    }
+    
+    .CajaChat .boton {
+        text-decoration: none;
+        display: table;
+        margin: 21px auto;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #227dfa;
+        border-radius: 6px;
+    }
+    
+    .CajaChat .boton:hover {
+        text-decoration: none;
+        display: table;
+        margin: 21px auto;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: #7cadf3;
+        border-radius: 6px;
+    }
+
+    /*************** Parte de Apuestas ******************/
+    /********** PARTE DE APUESTAS **************/
+
+    .Apuesta{
+        width: 90%;
+        padding-top: 35px;
+        height: 415px;
+    }
+
+    .Apuesta .avatar {
+        width: 150px;
+        position: absolute;
+        top: -45px;
+        left: 29%;
+    }
+
+    .Apuesta h1{
+        text-align: center;
+        font-size: 32px;
+        color: #f8d8cd;
+    }
+
+    .Apuesta h2{
+        font-size: 15px;
+        text-align: center;
+        color: #f8d8cd;
+    }
+
+    .Apuesta h3{
+        font-size: 13px;
+        color: #f8d8cd;
+    }
+
+    .Apuesta h4{
+        color: #ff7e52;
+        font-size: 10px;
+
+    }
+
+    .Apuesta i{
+        color: #ff7e52;
+        padding: 2px;
+    }
+
+    .Apuesta b{
+        margin-bottom: 5px;
+    }
+
+    .Apuesta span{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+
+    .Apuesta input[type="submit"] {
+        width: 22%;
+        font-size: 11px;
+        padding: 10px;
+        
+    }
+
+    .Apuesta input[type="submit"]:hover {
+        cursor: pointer;
+        background: #EC8464;
+    }
+
+    .Apuesta input[type="text"] {
+        height: 27px;
+        font-size: 12px;
+    }
+
+    .Apuesta select{
+        height: 27px;
+        font-size: 12px;
+    }
+
+    .Apuesta #resultado{
+        height:27px;
+        font-size: 12px;
+    }
+
+    select{
+        border: 1px solid rgba(255, 255, 255, 0.274);
+        background:  #000000a2;
+        outline: none;
+        width: 26%;
+        height: 30px;
+        color: #f8d8cd;
+        font-size: 15px;
+        padding-left: 5px;
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+
+    .select{
+        height: 100px;
+        overflow: scroll;
+    }
+
+    .Apuesta #boton{
+        width: 22%;
+        font-size: 11px;
+        padding: 10px;
+    }
+
+}

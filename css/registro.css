@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/FondoLogin.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+
+body.Expediente{
+  display: inline;
+}
+
+  .register-box {
+    width: 320px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 53.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 10px;
+  }
+ 
+  .register-box .avatar {
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    left: 60px;
+  }
+  
+  .register-box h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #f8d8cd;
+  }
+
+  .register-box h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #f8d8cd;
+  }
+  
+  .register-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    font-size: 17px;
+  }
+
+  .register-box label#lacajita {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    font-weight: 500;
+    font-size: 14.6px;
+  }
+  
+  .register-box input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .register-box input#lacajita {
+    width: 5%;
+    margin-right: 5px;
+    margin-bottom: 0px;
+  }
+  
+  .register-box input[type="text"], .register-box input[type="password"], .register-box input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #f8d8cd;
+    font-size: 15px;
+  }
+
+  .register-box input[type="text"].Expediente {
+    height: 32px;
+  }
+
+  .register-box textarea[type="bio"] {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 100px;
+    color: #f8d8cd;
+    font-size: 15px;
+  }
+  
+  .register-box input[type="submit"] {
+    border: none;
+    outline: none;
+    background: #94163b;
+    color: #fff;
+    width: 43%;
+    padding: 10.5px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .register-box input[type="submit"].Expediente {
+    display: inline;
+    padding: 12px;
+  }
+
+  .register-box span{
+    font-size: 13px;
+  }
+
+  .register-box span#lacajita{
+    font-size: 13px;
+    margin-top: 0px;
+  }
+
+  .register-box span.Expediente{
+    font-size: 13px;
+    padding-bottom: 25px;
+  }
+  
+  .register-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #EC8464;
+  }
+  
+  .register-box a {
+    text-decoration: none;
+    font-size: 14.6px;
+    line-height: 20px;
+    color: #00d5ea;
+  }
+
+  .register-box p{
+    font-size: 15px;
+    text-align: center;
+    color: #e7235e;
+    line-height: 28px;
+  }
+
+  .register-box p.Warning{
+    font-size: 15px;
+    text-align: justify;
+    color: #e7235e;
+    line-height: 28px;
+  }
+  
+  .register-box a:hover {
+    color: #fff;
+  }
+
+  .register-box .boton {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    display: inline-block;
+    width: 50%;
+    background:  #227dfa;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  .register-box .boton:hover {
+    background-color: #7cadf3;
+  }
+
+  input::placeholder{
+    color:rgba(255, 99, 71, 0.555);
+  }
+
+  #boton{
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    background:  #227dfa;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  #boton.Expediente{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 43%;
+    padding: 12px;
+  }
+
+  #boton:hover{
+    background-color: #7cadf3;
+  }
+
+  /*************** CONTROL DEL PERFIL ***************/
+  
+  .control-usuario {
+    width: 850px;
+    background:  linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 20px;
+    
+  }
+    
+  .control-usuario .avatar {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -120px;
+    left: 345px;
+  }
+
+  .control-usuario h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    color: #f8d8cd;
+  }
+
+  .control-usuario h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+
+  }
+  
+  .control-usuario hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 1px solid #ff5e5e;
+  }
+
+  .control-usuario .btn2 {
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .control-usuario .btn-warning {
+    color: #fff;
+    background-color: #e9931b;
+  }
+  
+  .control-usuario .btn-warning:hover {
+    color: #fff;
+    background-color: #ffa11e;
+  }
+
+  .control-usuario .btn-danger {
+    color: #fff;
+    background-color: #9c1a3d;
+  }
+  
+  .control-usuario .btn-danger:hover {
+    color: #fff;
+    background-color: #d40c41;
+
+  }
+
+  .control-usuario .btn-primary {
+    color: #fff;
+    background-color: #0073d5;
+  }
+  
+  .control-usuario .btn-primary:hover {
+    color: #fff;
+    background-color: #027fec;
+
+  }
+   
+  .control-usuario p{
+    font-size: 15px;
+    text-align: center;
+    color: #f8d8cd;
+    line-height: 28px;
+  }
+
+  .control-usuario .Links{
+    margin-left: 39px;
+  }
+
+@media only screen and (max-width: 750px){
+  
+  .register-box {
+    width: 320px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 53.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 10px;
+  }
+  
+  .register-box .avatar {
+    width: 200px;
+    position: absolute;
+    top: -50px;
+    left: 60px;
+  }
+
+  /************PARTE PERFIL***********/
+
+  .control-usuario {
+    width: 300px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 57%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 20px;
+    
+  }
+    
+  .control-usuario .avatar {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -90px;
+    left: 90px;
+  }
+
+  .control-usuario h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #f8d8cd;
+  }
+
+  .control-usuario h3 {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .control-usuario hr {
+    margin-top: 1px;
+    margin-bottom: 6px;
+    border: 0;
+    border-top: 1px solid #ff5e5e;
+  }
+
+  .control-usuario .btn2 {
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-weight: 500;
+  }
+
+  .control-usuario .btn-warning {
+    color: #fff;
+    background-color: #e9931b;
+  }
+  
+  .control-usuario .btn-warning:hover {
+    color: #fff;
+    background-color: #ffa11e;
+  }
+
+  .control-usuario .btn-danger {
+    color: #fff;
+    background-color: #9c1a3d;
+  }
+  
+  .control-usuario .btn-danger:hover {
+    color: #fff;
+    background-color: #d40c41;
+
+  }
+
+  .control-usuario .btn-primary {
+    color: #fff;
+    background-color: #0073d5;
+  }
+  
+  .control-usuario .btn-primary:hover {
+    color: #fff;
+    background-color: #027fec;
+
+  }
+   
+  .control-usuario p{
+    font-size: 13px;
+    text-align: center;
+    color: #f8d8cd;
+    line-height: 28px;
+  }
+
+  .control-usuario .Links{
+    display: grid;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+  
+

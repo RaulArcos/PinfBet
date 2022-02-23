@@ -1,0 +1,328 @@
+/*--------------------
+Body
+--------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 450px;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse farthest-corner at center top, #7c2b25 0%, #1c0a05 120%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+.navegacion .elemento{
+    display: inline-block;
+    padding: 0px 13px 5px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #f0cec2;
+    text-align: center;
+}
+
+.navegacion .elemento-perfil{
+  float: right;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 0%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.leaderboard h1 {
+  font-size: 27px;
+  color: #e1e1e1;
+  padding: 12px 13px 18px;
+  text-align: center;
+}
+.leaderboard h1 .moneda {
+    width: 50px;
+    position: relative;
+    top: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: baseline;
+}
+
+.leaderboard ol {
+  counter-reset: leaderboard;
+}
+.leaderboard ol li {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  counter-increment: leaderboard;
+  padding: 18px 10px 18px 50px;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: translateZ(0) scale(1, 1);
+}
+.leaderboard ol li::before {
+  content: counter(leaderboard);
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: #c24448;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+.leaderboard ol li mark {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px 10px 18px 50px;
+  margin: 0;
+  background: none;
+  color: #fff;
+}
+.leaderboard ol li mark::before, .leaderboard ol li mark::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -11px;
+  left: -9px;
+  border-top: 10px solid #bb7000;
+  border-left: 10px solid transparent;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+}
+.leaderboard ol li mark::after {
+  left: auto;
+  right: -9px;
+  border-left: none;
+  border-right: 10px solid transparent;
+}
+.leaderboard ol li small {
+  position: relative;
+  z-index: 2;
+  display: block;
+  text-align: right;
+}
+.leaderboard ol li::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffa723;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.leaderboard ol li:nth-child(1) {
+  background: #ffa723;
+}
+.leaderboard ol li:nth-child(1)::after {
+  background: #ffa723;
+}
+.leaderboard ol li:nth-child(2) {
+  background: #8b8b8b;
+}
+.leaderboard ol li:nth-child(2)::after {
+  background: #8b8b8b;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
+}
+.leaderboard ol li:nth-child(2) mark::before, .leaderboard ol li:nth-child(2) mark::after {
+  border-top: 7px solid #696969;
+  bottom: -7px;
+}
+.leaderboard ol li:nth-child(3) {
+  background: #CD7F32;
+}
+.leaderboard ol li:nth-child(3)::after {
+  background: #CD7F32;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.11);
+}
+.leaderboard ol li:nth-child(3) mark::before, .leaderboard ol li:nth-child(3) mark::after {
+  border-top: 2px solid #75491d;
+  bottom: -3px;
+}
+.leaderboard ol li:nth-child(4) {
+  background: #cd4b4b;
+}
+.leaderboard ol li:nth-child(4)::after {
+  background: #cd4b4b;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+.leaderboard ol li:nth-child(4) mark::before, .leaderboard ol li:nth-child(4) mark::after {
+  top: -7px;
+  bottom: auto;
+  border-top: none;
+  border-bottom: 6px solid #a63d3d;
+}
+.leaderboard ol li:nth-child(5) {
+  background: #c24448;
+}
+.leaderboard ol li:nth-child(5)::after {
+  background: #c24448;
+  box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+}
+.leaderboard ol li:nth-child(5) mark::before, .leaderboard ol li:nth-child(5) mark::after {
+  top: -9px;
+  bottom: auto;
+  border-top: none;
+  border-bottom: 8px solid #993639;
+}
+
+.leaderboard ol li:nth-child(6) {
+    background: #ad3d41;
+}
+
+.leaderboard ol li:nth-child(6)::after {
+    background: #ad3d41;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+}
+.leaderboard ol li:nth-child(6) mark::before, .leaderboard ol li:nth-child(6) mark::after {
+    top: -11px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 10px solid #993639;
+}
+
+.leaderboard ol li:nth-child(7) {
+    background: #9e383c;
+}
+
+.leaderboard ol li:nth-child(7)::after {
+    background: #9e383c;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+}
+.leaderboard ol li:nth-child(7) mark::before, .leaderboard ol li:nth-child(7) mark::after {
+    top: -13px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 12px solid #993639;
+}
+
+.leaderboard ol li:nth-child(8) {
+    background: #8d3235;
+}
+
+.leaderboard ol li:nth-child(8)::after {
+    background: #8d3235;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+}
+.leaderboard ol li:nth-child(8) mark::before, .leaderboard ol li:nth-child(8) mark::after {
+    top: -15px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 14px solid #993639;
+}
+
+.leaderboard ol li:nth-child(9) {
+    background: #7a2c2e;
+}
+
+.leaderboard ol li:nth-child(9)::after {
+    background: #7a2c2e;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+}
+.leaderboard ol li:nth-child(9) mark::before, .leaderboard ol li:nth-child(9) mark::after {
+    top: -17px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 16px solid #993639;
+}
+
+.leaderboard ol li:nth-child(10) {
+    background: #612325;
+    border-radius: 0 0 10px 10px;
+}
+
+.leaderboard ol li:nth-child(10)::after {
+    background: #612325;
+    box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 10px 10px;
+}
+.leaderboard ol li:nth-child(10) mark::before, .leaderboard ol li:nth-child(10) mark::after {
+    top: -19px;
+    bottom: auto;
+    border-top: none;
+    border-bottom: 18px solid #993639;
+}
+
+.leaderboard ol li:hover {
+  z-index: 2;
+  overflow: visible;
+}
+.leaderboard ol li:hover::after {
+  opacity: 1;
+  transform: scaleX(1.06) scaleY(1.03);
+}
+.leaderboard ol li:hover mark::before, .leaderboard ol li:hover mark::after {
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+}
+
+.leaderboard .volver{
+    text-align: center!important;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding-bottom: 10px;
+}
+
+.leaderboard .volver .btn{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #fff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.5;
+    border-radius: .25rem;
+
+}
+
+.leaderboard .volver .btn:hover{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid #fff;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    line-height: 1.5;
+    border-radius: .25rem;
+
+}
+
+::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dd144a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}

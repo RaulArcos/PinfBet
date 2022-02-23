@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../images/FondoLogin.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+    display: block;
+}
+
+body hr{
+    border-top:0px;
+    margin: 30px 0;
+}
+
+.CajaPerfil{
+    background: linear-gradient(to bottom, #1a0e0a, #73112b);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.CajaPerfil h1{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: #f8d8cd;
+}
+
+.CajaPerfil h2{
+    text-align: center;
+    font-size: 18px;
+    color: #f8d8cd;
+}
+
+.CajaPerfil h5{
+    font-size: 14px;
+    text-align: left;
+    color: #d3b7ad;
+}
+
+.CajaPerfil a.coins{
+    color: #ffffff;
+}
+
+
+.CajaPerfil p{
+    font-size: 15px;
+    text-align: center;
+    color: #d3b7ad;
+}
+
+.CajaPerfil i{
+    color: #f8d8cd;
+}
+
+
+.CajaPerfil th{
+    font-size: 14px;
+    text-align: center;
+    color: #d3b7ad;
+    line-height: 28px;
+}
+
+.CajaPerfil td{
+    font-size: 12px;
+    text-align: center;
+    color: #d3b7ad;
+    padding: 5px;
+    line-height: 28px;
+}
+
+
+.CajaPerfil td .perfil{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 700;
+    color: #d3b7ad;
+    line-height: 28px;
+}
+
+.CajaPerfil input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.CajaPerfil img{
+    border-radius: 25%;
+}
+
+.tabla{
+    --bs-table-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    /* vertical-align: top; */
+    border-color: #dee2e646;
+}
+
+.CajaPerfil .table-bordered>:not(caption)>*>* {
+    border-width: 0 1px;
+}
+
+
+
+.CajaPerfil input[type="search"] {
+    border: none;
+    border-bottom: 1px solid  #f8d8cd;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #f8d8cd;
+    font-size: 15px;
+}
+
+.CajaPerfil label {
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    font-size: 12px;
+    Color: #f8d8cd;
+  }
+
+.CajaPerfil textarea[type="bio"] {
+    border: 1px solid rgba(255, 255, 255, 0.308);
+    background: transparent;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    color: #f8d8cd;
+    font-size: 12px;
+}
+
+.CajaPerfil input[type="submit"] {
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    display: block;
+    width: 30%;
+    background: #b90f42;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.CajaPerfil tr input[type="submit"] {
+    border: none;
+    display: block;
+    margin: 2px auto;
+    outline: none;
+    width: 80%;
+    color: #fff;
+    background: #b90f42;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.CajaPerfil ::placeholder {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.384);
+    background: transparent;
+    outline: none;
+    padding-left: 2px;
+    height: 50px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: visible;
+}
+
+.CajaPerfil input[type="submit"]:hover {
+    cursor: pointer;
+    background: #EC8464;
+}
+
+/********* PARTE DEL CHAT *********/
+
+.CajaChat{
+    width: 600px;
+    height: 445px;
+    background: linear-gradient(to bottom, #1a0e0a, #630f28);
+    color: #f3d6cd;
+    top: 53.5%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 60px 30px 20px;
+    box-shadow: 0 7px 30px rgb(0 0 0 / 64%);
+    border-radius: 5px;
+}
+
+.CajaChat .avatar {
+    width: 200px;
+    position: absolute;
+    top: -60px;
+    left: 200px;
+  }
+
+.CajaChat h1{
+    text-align: center;
+    font-size: 35px;
+    color: #f8d8cd;
+}
+
+.CajaChat i{
+    color: #ff7e52;
+}
+
+.CajaChat h2{
+    font-size: 13px;
+    color: #f8d8cd;
+    margin-top: -2px;
+}
+
+.CajaChat input[type="submit"] {
+    border: none;
+    width: 14%;
+    background: #94163b;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6.5px;
+}
+
+.CajaChat input[type="submit"]:hover {
+    border: none;
+    width: 14%;
+    background: #EC8464;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6.5px;
+}
+
+.CajaChat input[type="text"] {
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    background: transparent;
+    outline: none;
+    width: 85%;
+    height: 40px;
+    color: #f8d8cd;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.CajaChat .Conversacion{
+    border:1px solid #f3f3f37e;
+    width: 540px;
+    height: 160px;
+    padding: 10px;
+    overflow: auto;
+
+}
+
+.CajaChat textarea[type="text"] {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 55px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: visible;
+}
+
+.CajaChat ::placeholder {
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    padding-left: 2px;
+    height: 50px;
+    width: 100%;
+    color: #f8d8cd;
+    font-size: 15px;
+    overflow: visible;
+}
+
+.CajaChat .boton {
+    text-decoration: none;
+    display: table;
+    margin: 15px auto;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #227dfa;
+    border-radius: 6px;
+}
+
+.CajaChat .boton:hover {
+    text-decoration: none;
+    display: table;
+    margin: 15px auto;
+    padding: 5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #7cadf3;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dd144a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 4px;
+}
+
